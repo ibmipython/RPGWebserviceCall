@@ -1,0 +1,24 @@
+This is the file that will assist you in sending generic letters via python calling the IBM i Web Service
+The below is for local use.
+
+1. Install Python from the installation folder.
+1.a. if environment variable is not set in windows do it manually.
+	search Environment Variable in Windows.
+	a System Property window pops up.
+	click Enfironment Variable
+	double-click Path in the second window
+	add a new path to the python installation home example:
+	C:\Users\usrprofile\AppData\Local\Programs\Python\Python37-32
+2. install dependents from the dependents folder in command prompt following instructions below:
+	a. cd navigate to where you dropped the file
+	b. py -m pip install pythondependents/"package name from DependentsFolder"
+		example: py -m pip install pythondependents/certifi-2019.6.16.tar.gz
+3. populate data in files/SomeCSVFile.csv
+4. while being in the root directory in command Line type the below after data has been setup:
+	py IBMiWebserviceCall.py
+5. Go back into files and you will see new txt files create for reporting
+
+
+
+
+	
